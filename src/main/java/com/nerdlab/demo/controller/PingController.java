@@ -30,4 +30,9 @@ public class PingController {
     public ResponseEntity<String> hello() {
         return ResponseEntity.ok("Hello, World!");
     }
+
+    @GetMapping("/sum")
+    public ResponseEntity<String> sum(){
+        return ResponseEntity.ok("A² + B² = C²");
+    }
 }
