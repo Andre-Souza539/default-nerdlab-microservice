@@ -48,5 +48,13 @@ class PingControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.timestamp", notNullValue()));
     }
+
+    @Test
+    void testHelloEndpoint() throws Exception {
+        mockMvc.perform(get("/api/v1/Hello")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Hello, World!"));
+    }
 }
 

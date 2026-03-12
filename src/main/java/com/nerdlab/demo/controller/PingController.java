@@ -25,4 +25,9 @@ public class PingController {
 
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
+
+    @GetMapping("/Hello")
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok("Hello, World!");
+    }
 }
