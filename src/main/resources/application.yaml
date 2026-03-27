@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: demo
-
-
-sonar:
-  projectKey: default-nerdlab-microservice
